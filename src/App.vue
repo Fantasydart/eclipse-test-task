@@ -1,15 +1,13 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Converter />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Converter from "./components/ConverterApp";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+      Converter
   }
 }
 </script>
