@@ -5,7 +5,7 @@
             <div class="title" v-bind="isConverter" @click="toggle(false, true)">Конвертер</div>
         </div>
         <div class="content">
-            <Currency v-if="isCurrency" />
+            <Currency v-if="isCurrency" :currencyList="list"/>
             <Converter v-if="isConverter" />
         </div>
     </div>
