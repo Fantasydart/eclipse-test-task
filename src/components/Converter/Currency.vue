@@ -1,8 +1,14 @@
 <template>
     <div class="content">
-        <div class="main-currency"></div>
+        <select name="main_currency" id="main_currency">
+            <option v-for="currency in currencyList" :key="currency.ID" value="">{{currency.Name}}</option>
+        </select>
+<!--        <div class="main-currency"></div>-->
         <img src="@/assets/double-arrow.svg" alt="">
-        <div class="support-currency"></div>
+<!--        <div class="support-currency"></div>-->
+        <select name="support_currency" id="support_currency">
+            <option v-for="currency in currencyList" :key="currency.ID" value="">{{currency.Name}}</option>
+        </select>
     </div>
 </template>
 
